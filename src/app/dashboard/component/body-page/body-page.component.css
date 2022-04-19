@@ -1,0 +1,119 @@
+header {
+    padding: 0;
+    width: 100%;
+    height: 350px;
+    padding: 5.5rem;
+}
+.head-text {
+    font-family: "Courier";
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+}
+.head-img {
+  padding: 1px;
+}
+
+/* ❤ icons programming */
+.icons{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+.icons-item h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.icons-icon{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* ❤ image and text */
+.show-img {
+    padding: 0;
+}
+.show-img img {
+    width: 100%;
+}
+.show-text {
+    padding: 2rem;
+    text-decoration: none;
+}
+.show-text ul {
+    padding: 5px;
+    margin: 0;
+}
+.show-text ul li{
+    margin-top: 5px;
+}
+/* ❤ image circle */
+.feedback {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.feedback .feedback-item img {
+    max-width: 12rem;
+    box-shadow: 0 5px 5px #adb5bd;
+}
+/* ❤ footer */
+footer {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+
+/* ❤ responsive */
+@media screen and (max-width:1050px) {
+  .head-text {
+    font-family: "Courier";
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width:670px) {
+  .head-text {
+    font-family: "Courier";
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width:450px) {
+  header{
+    padding: 0;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+    .show-text {
+        padding: 1rem;
+        text-decoration: none;
+    }
+    .head-text {
+      font-family: "Courier";
+      font-size: 1.2rem;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+}
+@media screen and (max-width:360px) {
+  header {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+  .head-text {
+    font-family: "Courier";
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
