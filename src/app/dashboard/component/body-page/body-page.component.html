@@ -2,20 +2,22 @@
 <header class="text-white" [ngStyle]="{'background': 'url(' + backgroundUrl + ') no-repeat center center / cover'}">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <h1><i class="fa fa-code code" aria-hidden="true" style="color: #4d4d4d;font-weight: bold;"></i> </h1>
-                <div class="col-lg-6 head-text">
-                    <p>Hi </p>
-                    <p>It's me PMNTS......</p>
-                    <p>Welcome to my World!</p>
+                <div class="col-lg-12 head-text">
+                    <p>{{currentDate}}</p>
+                    <p>Hi, Welcome to my World.</p>
+                    <p>Call me Palm or Natthast it my real name.</p>
+                    <p>Enjoy watching for my works.</p>
+                    <p>Thank you.</p>
                 </div>
                 <h1 style="margin-top: 8px; margin-bottom: 0;"><i class="fa fa-code code" aria-hidden="true" style="color: #4d4d4d;font-weight: bold;"></i>  </h1>
             </div>
-            <div class="col-md-6 test">
+            <!-- <div class="col-md-6 test">
                 <div class="feedback-item mx-auto mb-5 mb-lg-0">
-                    <!-- <img src="./assets/images/3.jpg" > -->
+                    <img src="./assets/images/3.jpg" >
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </header>
@@ -122,7 +124,7 @@
       </div>
     </div>
 </section>
-<!--  -->
+
 <!-- Body -->
 <section class="showcase">
     <div class="container-fluid">
@@ -230,6 +232,7 @@
     </div>
   </section>
 
+  <!-- After Footer -->
   <section class="feedback text-center bg-light">
     <div class="container">
       <h2 class="mb-5" style="font-family:cursive;"> The secret of <font color="red">successful</font> in life is for a man to be ready for his opportunity when it comes.</h2>
@@ -266,7 +269,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <p class="text-foot">&copy; Developer 2021. All right to beginning.</p>
+          <p class="text-foot">&copy; Developer {{defaultYear}}. All right to beginning.</p>
         </div>
       </div>
     </div>

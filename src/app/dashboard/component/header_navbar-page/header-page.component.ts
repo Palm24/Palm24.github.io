@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-page.component.css']
 })
 export class HeaderPageComponent implements OnInit{
-    constructor() {}
-    ngOnInit(): void {}
+  userFullName: string = 'Natthasit Suksumran'
+
+  constructor() {}
+  
+  ngOnInit(): void {}
 }
