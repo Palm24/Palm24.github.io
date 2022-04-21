@@ -1,4 +1,9 @@
-<nav class="navbar navbar-expand-md bg-dark navbar-light sticky-top">
+<div *ngIf="timeOut == true" 
+    class="d-flex align-items-center justify-content-center" 
+    style="height: calc(100vh - 20px);">
+    <mat-spinner></mat-spinner>
+</div>
+<nav class="navbar navbar-expand-md bg-dark navbar-light sticky-top" *ngIf="timeOut == false">
     <div class="container">
       <!-- Brand -->
       <a class="navbar-brand" routerLinkActive="active"><i class='fab fa-pagelines' style="color: white;"></i></a>
@@ -41,7 +46,7 @@
     </div>
 </nav>
 <div class="wrapper pagedisplay">
-  <div>
+  <div *ngIf="timeOut == false">
     <router-outlet></router-outlet>
   </div>
 </div>

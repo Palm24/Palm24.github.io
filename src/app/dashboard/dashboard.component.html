@@ -1,11 +1,3 @@
 <div>
-    <div *ngIf="timeOut == true" 
-        class="d-flex align-items-center justify-content-center" 
-        style="height: calc(100vh - 20px);">
-        <mat-spinner></mat-spinner>
-    </div>
-
-    <app-header-page *ngIf="timeOut == false"></app-header-page>
-
-    <app-body-page *ngIf="timeOut == false"></app-body-page>
+    <app-body-page></app-body-page>
 </div>

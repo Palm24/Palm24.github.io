@@ -7,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainNavbarComponent implements OnInit{
   userFullName: string = 'Natthasit Suksumran'
+  timeOut: boolean = true;
 
   constructor() {}
   
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.timeOut = true;
+    setTimeout(() => {
+      this.timeOut = false;
+    },1500);
+  }
 }
