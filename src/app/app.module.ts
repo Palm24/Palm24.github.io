@@ -7,10 +7,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from './app-material.module';
+import { HttpClientModule } from '@angular/common/http';
+
+import { MainNavbarComponent } from './layouts/mainnuvbar/mainnavbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainNavbarComponent
   ],
   imports: [
     CommonModule,
@@ -22,6 +26,7 @@ import { MaterialModule } from './app-material.module';
       useHash: true,
       relativeLinkResolution: 'legacy'
     }),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
