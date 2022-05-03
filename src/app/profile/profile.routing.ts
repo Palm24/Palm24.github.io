@@ -6,8 +6,8 @@ export const ProfileRouting: Routes = [
     path: '',
     children: [ 
       {
-        path: 'profile',
-        component: ProfileComponent   
+        path: 'List',
+        component: ProfileComponent
       }
     ]
   }
