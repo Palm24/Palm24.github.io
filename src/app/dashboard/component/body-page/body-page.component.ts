@@ -11,6 +11,19 @@ export class BodyPageComponent implements OnInit{
     
     defaultYear: Number = new Date().getFullYear();
     currentDate: String = formatDate(new Date(), 'dd/MM/yyyy', 'en');
+
+    tools = {
+        html: "Html5",
+        css: "CSS",
+        javascript: "JavaScript",
+        php: "PHP",
+        nodejs: "NodeJS",
+        c_sharp: "C# / .NetCore",
+        js_frameWork: "Angular",
+        angular_material: "Angular Matrerial",
+        bootstrap: "Bootstrap",
+        web_framework: "Wordpress"
+    }
     
     constructor() {}
     

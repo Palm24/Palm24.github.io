@@ -2,7 +2,7 @@
 <header class="text-white" [ngStyle]="{'background': 'url(' + backgroundUrl + ') no-repeat center center / cover'}">
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-12">
                 <h1><i class="fa fa-code code" aria-hidden="true" style="color: #4d4d4d;font-weight: bold;"></i> </h1>
                 <div class="col-lg-12 head-text">
                     <p>{{currentDate}}</p>
@@ -26,98 +26,94 @@
 <section class="icons text-center bg-light ">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-2">
+        <div class="col-sm-4 col-lg-2">
           <div class="icons-item mx-auto mb-4 ">            
-            <div class="icons-icon">
-              <!-- <i class="fab fa-html5" style="font-size: 40px;color: orangered;"></i> -->
-              <mat-icon> format_paint</mat-icon>
+            <div class="icons-icon mb-3">
+              <i class="fab fa-html5" style="font-size: 40px;color: orangered;"></i>
             </div>
-            <h3>Html5</h3>
+            <h3>{{tools.html}}</h3>
           </div>
         </div>
 
-        <div class="col-lg-2">
+        <div class="col-sm-4 col-lg-2">
           <div class="icons-item mx-auto mb-4">           
-            <div class="icons-icon">
-              <!-- <i class="fab fa-css3-alt" style="font-size: 40px; color: #254BDD;"></i> -->
-              <mat-icon> format_paint</mat-icon>
+            <div class="icons-icon mb-3">
+              <i class="fab fa-css3-alt" style="font-size: 40px; color: #254BDD;"></i>
             </div>
-            <h3>CSS</h3>
+            <h3>{{tools.css}}</h3>
           </div>
         </div>
 
-        <div class="col-lg-2">
+        <div class="col-sm-4 col-lg-2">
           <div class="icons-item mx-auto mb-4 ">         
-            <div class="icons-icon">
-              <!-- <i class='fab fa-js-square' style="color: #ffaf1c;font-size: 40px;"></i> -->
-              <mat-icon> format_paint</mat-icon>
+            <div class="icons-icon mb-3">
+              <i class='fab fa-js-square' style="color: #ffaf1c;font-size: 40px;"></i>
             </div>
-            <h3>Javascript</h3>
+            <h3>{{tools.javascript}}</h3>
           </div>
         </div>
           
-        <div class="col-lg-2">
+        <div class="col-sm-4 col-lg-2">
           <div class="icons-item mx-auto mb-4 ">
-            <div class="icons-icon">
-              <!-- <i class="fab fa-php" style="color: rgb(31, 119, 235);font-size: 44px;"></i> -->
-              <mat-icon> format_paint</mat-icon>
+            <div class="icons-icon mb-3">
+              <i class="fab fa-php" style="color: rgb(31, 119, 235);font-size: 44px;"></i>
             </div>
-            <h3>PHP</h3>
+            <h3>{{tools.php}}</h3>
           </div>
         </div>
 
-        <div class="col-lg-2">
+        <div class="col-sm-4 col-lg-2">
           <div class="icons-item mx-auto mb-4 ">          
-            <div class="icons-icon">
-              <!-- <i class="fab fa-node" style="color: #4F9944;font-size: 50px;"></i> -->
-              <mat-icon> format_paint</mat-icon>
+            <div class="icons-icon mb-3">
+              <i class="fab fa-node" style="color: #4F9944;font-size: 44px;"></i>
             </div>
-            <h3>NodeJS</h3>
+            <h3>{{tools.nodejs}}</h3>
           </div>
         </div>
 
-        <div class="col-lg-2">
+        <div class="col-sm-4 col-lg-2">
           <div class="icons-item mx-auto mb-4 ">          
-            <div class="icons-icon">
-              <!-- <i class="fab fa-cuttlefish" style="color: #5900ff;font-size: 44px;">#</i> -->
-              <mat-icon> format_paint</mat-icon>
+            <div class="icons-icon mb-3">
+              <i class="fab fa-cuttlefish" style="color: #5900ff;font-size: 25px;"># /</i>
+              <span style="font-size: 20px; color: #5900ff; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"> .Net Core</span>
             </div>
-            <h3>C# / .NetCore</h3>
+            <h3>{{tools.c_sharp}}</h3>
           </div>
         </div>
 
-        <div class="col-lg-2">
+        <div class="col-sm-4 col-lg-2">
           <div class="icons-item mx-auto mb-4 ">          
-            <div class="icons-icon mb-0">
+            <div class="icons-icon mb-3">
               <i class="fab fa-angular" style="color: #ff0000;font-size: 44px;"></i>
-              <!-- <mat-icon> format_paint</mat-icon> -->
             </div>
-            <h3>Angular</h3>
+            <h3>{{tools.js_frameWork}}</h3>
           </div>
         </div>
 
-        <div class="col-lg-2">
+        <div class="col-sm-4 col-lg-2">
           <div class="icons-item mx-auto mb-4 ">        
-            <div class="icons-icon">
-              <!-- <span style="font-weight: bold;color: rgb(115, 94, 255);">
-                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
-                <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
-                <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
-              </svg>
-            </span> -->
-            <mat-icon> format_paint</mat-icon>
+            <div class="icons-icon mb-3">
+              <i class="fab fa-angular" style="color: #3F51B5; font-size: 44px;"></i> <span style="font-size: 15px; color: #3F51B5;"> Material</span>
             </div>
-            <h3>Bootstrap</h3>
+            <h3>{{tools.angular_material}}</h3>
           </div>
         </div>
 
-        <div class="col-lg-2">
-          <div class="icons-item mx-auto mb-4 ">           
-            <div class="icons-icon">
-              <!-- <span style="font-weight: bold;color: rgb(90, 182, 205); font-size: 38px;"><i class="fab fa-wordpress" aria-hidden="true"></i></span> -->
-              <mat-icon> format_paint</mat-icon>
+        <div class="col-sm-4 col-lg-2">
+          <div class="icons-item mx-auto mb-4 ">        
+            <div class="icons-icon mb-3">
+            <i class="fab fa-bootstrap" style="font-weight: bold;color: rgb(115, 94, 255); font-size: 44px;"></i>
             </div>
-            <h3>Wordpress</h3>
+            <h3>{{tools.bootstrap}}</h3>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-lg-2">
+          <div class="icons-item mx-auto mb-4 ">           
+            <div class="icons-icon mb-3">
+              <span style="font-weight: bold;color: rgb(90, 182, 205); font-size: 38px;"><i class="fab fa-wordpress" aria-hidden="true"></i></span>
+            </div>
+            <h3>{{tools.web_framework}}</h3>
           </div>
         </div>
 
