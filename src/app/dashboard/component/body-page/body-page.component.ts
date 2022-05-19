@@ -21,8 +21,12 @@ export class BodyPageComponent implements OnInit{
         c_sharp: "C# / .NetCore",
         js_frameWork: "Angular",
         angular_material: "Angular Matrerial",
-        bootstrap: "Bootstrap",
-        web_framework: "Wordpress"
+        bootstrap: "Bootstrap 4",
+        web_framework: "Wordpress",
+        vs: "Visual Code",
+        vs_studio: "Visual Studio Code",
+        database: "Microsoft SQL SERVER Management Studio 18",
+        git: "Source Tree"
     }
     
     constructor() {}

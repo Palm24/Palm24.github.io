@@ -23,102 +23,174 @@
 </header>
 
 <!-- Programming Skill -->
-<section class="icons text-center bg-light ">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4 col-lg-2">
-          <div class="icons-item mx-auto mb-4 ">            
-            <div class="icons-icon mb-3">
-              <i class="fab fa-html5" style="font-size: 40px;color: orangered;"></i>
-            </div>
-            <h3>{{tools.html}}</h3>
-          </div>
-        </div>
+<section class="icons text-center bg-light mb-3">
+  <div class="container-fluid">
+    <mat-tab-group dynamicHeight mat-align-tabs="center" mat-stretch-tabs>
+      <mat-tab label="Programming Language">
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon mr-1">language</mat-icon>
+          Programming Language
+        </ng-template>
 
-        <div class="col-sm-4 col-lg-2">
-          <div class="icons-item mx-auto mb-4">           
-            <div class="icons-icon mb-3">
-              <i class="fab fa-css3-alt" style="font-size: 40px; color: #254BDD;"></i>
-            </div>
-            <h3>{{tools.css}}</h3>
-          </div>
-        </div>
+        <div class="container-fluid">
+          <div class="row">
 
-        <div class="col-sm-4 col-lg-2">
-          <div class="icons-item mx-auto mb-4 ">         
-            <div class="icons-icon mb-3">
-              <i class='fab fa-js-square' style="color: #ffaf1c;font-size: 40px;"></i>
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4 ">            
+                <div class="icons-icon mb-3">
+                  <i class="fab fa-html5" style="font-size: 40px;color: orangered;"></i>
+                </div>
+                <h3>{{tools.html}}</h3>
+              </div>
             </div>
-            <h3>{{tools.javascript}}</h3>
-          </div>
-        </div>
-          
-        <div class="col-sm-4 col-lg-2">
-          <div class="icons-item mx-auto mb-4 ">
-            <div class="icons-icon mb-3">
-              <i class="fab fa-php" style="color: rgb(31, 119, 235);font-size: 44px;"></i>
+    
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4">           
+                <div class="icons-icon mb-3">
+                  <i class="fab fa-css3-alt" style="font-size: 40px; color: #254BDD;"></i>
+                </div>
+                <h3>{{tools.css}}</h3>
+              </div>
             </div>
-            <h3>{{tools.php}}</h3>
-          </div>
-        </div>
+    
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4 ">         
+                <div class="icons-icon mb-3">
+                  <i class='fab fa-js-square' style="color: #ffaf1c;font-size: 40px;"></i>
+                </div>
+                <h3>{{tools.javascript}}</h3>
+              </div>
+            </div>
+              
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4 ">
+                <div class="icons-icon mb-3">
+                  <i class="fab fa-php" style="color: rgb(31, 119, 235);font-size: 40px;"></i>
+                </div>
+                <h3>{{tools.php}}</h3>
+              </div>
+            </div>
+    
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4 ">          
+                <div class="icons-icon mb-3">
+                  <i class="fab fa-node" style="color: #4F9944;font-size: 40px;"></i>
+                </div>
+                <h3>{{tools.nodejs}}</h3>
+              </div>
+            </div>
+    
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4 ">          
+                <div class="icons-icon mb-3">
+                  <i class="fab fa-cuttlefish" style="color: #5900ff;font-size: 40px;"># /</i>
+                  <span style="font-size: 20px; color: #5900ff; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"> .Net Core</span>
+                </div>
+                <h3>{{tools.c_sharp}}</h3>
+              </div>
+            </div>
 
-        <div class="col-sm-4 col-lg-2">
-          <div class="icons-item mx-auto mb-4 ">          
-            <div class="icons-icon mb-3">
-              <i class="fab fa-node" style="color: #4F9944;font-size: 44px;"></i>
-            </div>
-            <h3>{{tools.nodejs}}</h3>
           </div>
         </div>
+      </mat-tab>
+      <mat-tab label="Framework">
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon mr-1">border_color </mat-icon>
+          Framework
+        </ng-template>
 
-        <div class="col-sm-4 col-lg-2">
-          <div class="icons-item mx-auto mb-4 ">          
-            <div class="icons-icon mb-3">
-              <i class="fab fa-cuttlefish" style="color: #5900ff;font-size: 25px;"># /</i>
-              <span style="font-size: 20px; color: #5900ff; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"> .Net Core</span>
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4 ">          
+                <div class="icons-icon mb-3">
+                  <i class="fab fa-angular" style="color: #ff0000;font-size: 44px;"></i>
+                </div>
+                <h3>{{tools.js_frameWork}}</h3>
+              </div>
             </div>
-            <h3>{{tools.c_sharp}}</h3>
+    
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4 ">        
+                <div class="icons-icon mb-3">
+                  <i class="fab fa-angular" style="color: #3F51B5; font-size: 44px;"></i> <span style="font-size: 15px; color: #3F51B5;"> Material</span>
+                </div>
+                <h3>{{tools.angular_material}}</h3>
+              </div>
+            </div>
+    
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4 ">        
+                <div class="icons-icon mb-3">
+                <i class="fab fa-bootstrap" style="font-weight: bold;color: rgb(115, 94, 255); font-size: 44px;"></i>
+                </div>
+                <h3>{{tools.bootstrap}}</h3>
+              </div>
+            </div>
+    
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4 ">           
+                <div class="icons-icon mb-3">
+                  <span style="font-weight: bold;color: rgb(90, 182, 205); font-size: 38px;"><i class="fab fa-wordpress" aria-hidden="true"></i></span>
+                </div>
+                <h3>{{tools.web_framework}}</h3>
+              </div>
+            </div>
+    
           </div>
         </div>
+      </mat-tab>
+      <mat-tab label="Tools">
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon mr-1">settings </mat-icon>
+          Tools
+        </ng-template>
 
-        <div class="col-sm-4 col-lg-2">
-          <div class="icons-item mx-auto mb-4 ">          
-            <div class="icons-icon mb-3">
-              <i class="fab fa-angular" style="color: #ff0000;font-size: 44px;"></i>
+        <div class="container-fluid">
+          <div class="row">
+            
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4 ">          
+                <div class="icons-icon mb-3">
+                  <i class="fas fa-code" style="color: #247FB8; font-size: 30px;"></i>
+                </div>
+                <h3>{{tools.vs}}</h3>
+              </div>
             </div>
-            <h3>{{tools.js_frameWork}}</h3>
+    
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4 ">        
+                <div class="icons-icon mb-3">
+                  <i class="fas fa-code" style="color: #935FCE; font-size: 30px;"></i>
+                </div>
+                <h3>{{tools.vs_studio}}</h3>
+              </div>
+            </div>
+
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4 ">           
+                <div class="icons-icon mb-3">
+                  <i class="fab fa-git-alt" style="color: #EF7F6A; font-size: 35px;" aria-hidden="true"></i>
+                </div>
+                <h3>{{tools.git}}</h3>
+              </div>
+            </div>
+    
+            <div class="col-4 col-md-4 col-lg-2 mt-5">
+              <div class="icons-item mx-auto mb-4 ">        
+                <div class="icons-icon mb-3">
+                <i class="fas fa-database" style="color: #FFB900; font-size: 30px;"></i>
+                </div>
+                <h3>{{tools.database}}</h3>
+              </div>
+            </div>
+
           </div>
         </div>
-
-        <div class="col-sm-4 col-lg-2">
-          <div class="icons-item mx-auto mb-4 ">        
-            <div class="icons-icon mb-3">
-              <i class="fab fa-angular" style="color: #3F51B5; font-size: 44px;"></i> <span style="font-size: 15px; color: #3F51B5;"> Material</span>
-            </div>
-            <h3>{{tools.angular_material}}</h3>
-          </div>
-        </div>
-
-        <div class="col-sm-4 col-lg-2">
-          <div class="icons-item mx-auto mb-4 ">        
-            <div class="icons-icon mb-3">
-            <i class="fab fa-bootstrap" style="font-weight: bold;color: rgb(115, 94, 255); font-size: 44px;"></i>
-            </div>
-            <h3>{{tools.bootstrap}}</h3>
-          </div>
-        </div>
-
-        <div class="col-sm-4 col-lg-2">
-          <div class="icons-item mx-auto mb-4 ">           
-            <div class="icons-icon mb-3">
-              <span style="font-weight: bold;color: rgb(90, 182, 205); font-size: 38px;"><i class="fab fa-wordpress" aria-hidden="true"></i></span>
-            </div>
-            <h3>{{tools.web_framework}}</h3>
-          </div>
-        </div>
-
-      </div>
-    </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
 </section>
 
 <!-- Body -->
