@@ -1,0 +1,9 @@
+/* ❤ image circle */
+.feedback {
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+}
+.feedback .feedback-item img {
+    max-width: 12rem;
+    box-shadow: 0 5px 5px #adb5bd;
+}

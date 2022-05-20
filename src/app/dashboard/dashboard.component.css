@@ -1,0 +1,53 @@
+/* ❤ responsive */
+@media screen and (max-width:1050px) {
+    .head-text {
+      font-family: "Courier";
+      font-size: 1.5rem;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+  @media screen and (max-width:670px) {
+    .head-text {
+      font-family: "Courier";
+      font-size: 1.5rem;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+  @media screen and (max-width:450px) {
+    header{
+      padding: 0;
+      width: 100%;
+      height: auto;
+      padding: 2rem;
+    }
+      .show-text {
+          padding: 1rem;
+          text-decoration: none;
+      }
+      .head-text {
+        font-family: "Courier";
+        font-size: 1.2rem;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+  }
+  @media screen and (max-width:360px) {
+    header {
+      padding: 0;
+      width: 100%;
+      height: auto;
+      padding: 2rem;
+    }
+    .head-text {
+      font-family: "Courier";
+      font-size: 1.2rem;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }

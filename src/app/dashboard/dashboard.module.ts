@@ -6,7 +6,11 @@ import { MaterialModule } from '../app-material.module';
 import { DashboardRouting } from './dashboard.routing';
 
 import { DashboardComponent } from './dashboard.component';
+import { AfterBodyPageComponent } from './component/after_body-page/after_body-page.component';
 import { BodyPageComponent } from './component/body-page/body-page.component';
+import { HeaderPageComponent } from './component/header-page/header-page.component';
+import { AfterFooterPageComponent } from './component/after_footer-page/after_footer-page.component';
+import { FooterPageComponent } from './component/footer-page/footer-page.component';
 
 @NgModule({
     imports: [
@@ -18,7 +22,11 @@ import { BodyPageComponent } from './component/body-page/body-page.component';
     ],
     declarations: [
         DashboardComponent,
-        BodyPageComponent
+        AfterBodyPageComponent,
+        BodyPageComponent,
+        HeaderPageComponent,
+        FooterPageComponent,
+        AfterFooterPageComponent
     ]
 })
 
