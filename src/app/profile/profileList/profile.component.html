@@ -8,8 +8,8 @@
           <div class="card">
             <div class="card-body">
               <div class="d-flex flex-column align-items-center text-center">
-                <img src="https://sv1.picz.in.th/images/2021/05/21/Px8BZI.jpg" 
-                  alt="Admin" class="rounded-circle card-profile" width="80%">
+                <!-- <img src={{imgProfile}} 
+                  alt="Admin" class="rounded-circle card-profile" width="80%"> -->
                 <div class="mt-3">
                   <h4 class="text-secondary mb-1">{{currentDae}}</h4>
                   <p class="text-secondary mb-1">Web Developer</p>
@@ -61,37 +61,43 @@
           <div class="card mt-3">
             <div class="card h-100">
               <!-- Programming Language -->
-              <div class="card-body font" >
+              <div class="card-body font">
                 <h4 class="d-flex align-items-center mb-3 font-weight-bold">
-                  <mat-icon class="example-tab-icon mr-1">language</mat-icon>Programming Language
+                  <mat-icon class="example-tab-icon mr-1">language</mat-icon>{{pgm}}
                 </h4>               
                 <div class="row">
                   <div class="col-sm-6 col-md-6">
-                    <p ><i class="fab fa-html5" style="font-size: 20px;color: orangered;"></i> Html</p>
+                    <p ><i class="fab fa-html5" [ngClass]="onCheckTypeLanguagePgm(item_pgm.html, pgm)"></i> {{item_pgm.html}}</p>
                   </div>
                   <div class="col-sm-6 col-md-6">
-                    <p><i class="fab fa-css3-alt" style="font-size: 20px; color: royalblue;"></i> CSS</p>
+                    <p><i class="fab fa-css3-alt" [ngClass]="onCheckTypeLanguagePgm(item_pgm.css, pgm)"></i> {{item_pgm.css}}</p>
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col-sm-6 col-md-6">
-                    <p><i class='fab fa-js-square' style="color: #e09306;font-size: 20px;"></i> JavaScript</p>
+                    <p>
+                      <i class='fab fa-js-square' [ngClass]="onCheckTypeLanguagePgm(item_pgm.javascript, pgm)"></i> 
+                      {{item_pgm.javascript}}
+                    </p>
                   </div>
                   <div class="col-sm-6 col-md-6">
-                    <p > <i class="fab fa-node-js" style="font-size: 20px;color: #009933;"></i> NodeJS</p>
+                    <p > 
+                      <i class="fab fa-node-js" [ngClass]="onCheckTypeLanguagePgm(item_pgm.nodejs, pgm)"></i> 
+                      {{item_pgm.nodejs}}
+                    </p>
                   </div>
                 </div>    
 
                 <div class="row">
                   <div class="col-sm-6 col-md-6">        
                     <p>
-                      <i class="fab fa-cuttlefish" style="color: #5900ff;font-size: 20px;">#</i>
-                       C#/.NetCore
+                      <i class="fab fa-cuttlefish" [ngClass]="onCheckTypeLanguagePgm(item_pgm.c_sharp, pgm)">#</i>
+                       {{item_pgm.c_sharp}}
                     </p>
                   </div>
                   <div class="col-sm-6 col-md-6">
-                    <p ><i class="fab fa-php" style="color: rgb(31, 119, 235);font-size: 24px;"></i> PHP</p>
+                    <p ><i class="fab fa-php" [ngClass]="onCheckTypeLanguagePgm(item_pgm.php, pgm)"></i> {{item_pgm.php}}</p>
                   </div>
                 </div>                                    
               </div>
@@ -99,19 +105,19 @@
               <!-- Framework -->
               <div class="card-body font pt-0">
                 <h4 class="d-flex align-items-center mb-3 font-weight-bold">
-                  <mat-icon class="example-tab-icon mr-1">border_color </mat-icon>Framework
+                  <mat-icon class="example-tab-icon mr-1">edit </mat-icon>{{fw}}
                 </h4>
                 <div class="row">
                   <div class="col-sm-6 col-md-6">        
                     <p >
-                      <i class="fab fa-angular" style="color: #ff0000;font-size: 20px;"></i>
-                       Angular
+                      <i class="fab fa-angular" [ngClass]="onCheckTypeLanguagePgm(item_fw.angular, fw)"></i>
+                       <span>{{item_fw.angular}}</span>
                     </p>
                   </div>
                   <div class="col-sm-6 col-md-6">
                     <p >
-                      <i class="fab fa-angular" style="color: #3F51B5; font-size: 20px;"></i> 
-                      <span> Angular Material</span>
+                      <i class="fab fa-angular" [ngClass]="onCheckTypeLanguagePgm(item_fw.angular_mtr, fw)"></i> 
+                      <span> {{item_fw.angular_mtr}}</span>
                     </p>
                   </div>
                 </div>    
@@ -119,14 +125,14 @@
                 <div class="row">
                   <div class="col-sm-6 col-md-6">        
                     <p >
-                      <i class="fab fa-bootstrap" style="font-size: 20px;color: rgb(115, 94, 255);"></i>
-                      <span>Bootstrap 4</span>
+                      <i class="fab fa-bootstrap" [ngClass]="onCheckTypeLanguagePgm(item_fw.bootstrap, fw)"></i>
+                      <span> {{item_fw.bootstrap}}</span>
                     </p>
                   </div>
                   <div class="col-sm-6 col-md-6">
                     <p>
-                      <i class="fab fa-wordpress" style="font-size: 20px;color: rgb(90, 182, 205);" ></i> 
-                      <span>Wordpress</span>                      
+                      <i class="fab fa-wordpress" [ngClass]="onCheckTypeLanguagePgm(item_fw.wordpress, fw)"></i> 
+                      <span> {{item_fw.wordpress}}</span>                      
                     </p>
                   </div>
                 </div>                                  
@@ -135,34 +141,34 @@
               <!-- Tools -->
               <div class="card-body font pt-0">
                 <h4 class="d-flex align-items-center mb-3 font-weight-bold">
-                  <mat-icon class="example-tab-icon mr-1">settings </mat-icon>Tools
+                  <mat-icon class="example-tab-icon mr-1">settings </mat-icon>{{tl}}
                 </h4>
                 <div class="row">
                   <div class="col-sm-6 col-md-6">        
                     <p >
-                      <i class="fas fa-code" style="color: #247FB8; font-size: 15px;"></i>
-                        <span> Visul Code</span>
+                      <i class="fas fa-code" [ngClass]="onCheckTypeLanguagePgm(item_tl.vs_code, tl)"></i>
+                        <span> {{item_tl.vs_code}}</span>
                     </p>
                   </div>
                   <div class="col-sm-6 col-md-6">
                     <p >
-                      <i class="fas fa-code" style="color: #935FCE; font-size: 15px;"></i>
-                      <span> Visual Studio</span>
+                      <i class="fas fa-code" [ngClass]="onCheckTypeLanguagePgm(item_tl.vs_studio, tl)"></i>
+                      <span> {{item_tl.vs_studio}}</span>
                     </p>
                   </div>
                 </div>    
 
                 <div class="row">
-                  <div class="col-sm-6 col-md-6">        
-                    <p >
-                      <i class="fab fa-git-alt" style="color: #EF7F6A; font-size: 20px;" aria-hidden="true"></i>
-                      <span> Source Tree</span>
-                    </p>
-                  </div>
                   <div class="col-sm-6 col-md-6">
                     <p>
-                      <i class="fas fa-database" style="color: #FFB900; font-size: 15px;"></i>
-                      <span> Microsoft SQL Server Management Studio 18</span>                      
+                      <i class="fas fa-database" [ngClass]="onCheckTypeLanguagePgm(item_tl.database, tl)"></i>
+                      <span> {{item_tl.database}}</span>                      
+                    </p>
+                  </div>
+                  <div class="col-sm-6 col-md-6">        
+                    <p >
+                      <i class="fab fa-git-alt" [ngClass]="onCheckTypeLanguagePgm(item_tl.git, tl)" aria-hidden="true"></i>
+                      <span> {{item_tl.git}}</span>
                     </p>
                   </div>
                 </div>                                  
@@ -174,7 +180,7 @@
         </div>
 
         <div class="col-md-8">
-          <!-- Personal History -->
+          <!-- Personal Daetail -->
           <div class="card mb-3">
             <div class="card-body">
               <div class="row">

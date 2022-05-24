@@ -1,3 +1,63 @@
 .card-profile {
     box-shadow: 0 5px 5px #adb5bd;
 }
+
+.pgm-html {
+    font-size: 20px;
+    color: orangered;
+}
+.pgm-css {
+    font-size: 20px;
+    color: royalblue;
+}
+.pgm-javaScript {
+    font-size: 20px;
+    color: #ffaf1c;
+}
+.pgm-nodeJS {
+    font-size: 20px;
+    color: #009933;
+    font-weight: bold;
+}
+.pgm-c_Sharp {
+    font-size: 20px;
+    color: #5900ff;
+}
+.pgm-php {
+    font-size: 24px;
+    color: rgb(31, 119, 235);
+}
+
+.fw-angular{
+    font-size: 20px;
+    color: #ff0000;
+}
+.fw-angular_material {
+    font-size: 20px;
+    color: #3F51B5;
+}
+.fw-bootstrap {
+    font-size: 20px;
+    color: rgb(115, 94, 255);
+}
+.fw-wordpress {
+    font-size: 20px;
+    color: rgb(90, 182, 205);
+}
+
+.tl-vs_code {
+    font-size: 15px;
+    color: #247FB8;
+}
+.tl-vs.studio {
+    font-size: 15px;
+    color: #935FCE;
+}
+.tl-database {
+    font-size: 15px;
+    color: #FFB900;
+}
+.tl-git {
+    font-size: 20px;
+    color: #EF7F6A;
+}
