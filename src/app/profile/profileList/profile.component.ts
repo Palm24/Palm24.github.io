@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import {formatDate} from '@angular/common';
+import { education, personal } from "./entities/profile.entity";
 
 @Component({
     selector: 'app-profile',
@@ -38,6 +39,55 @@ export class ProfileComponent implements OnInit{
         git: "Source Tree"
     }
 
+    section = {
+        fullName: "Name",
+        birth: "Birth",
+        email: "Email",
+        mobile: "Moblie Phone",
+        address: "Address"
+    }
+
+//#region personal
+    personalData: personal[] = [
+        {
+            section: 'Name',
+            detail: 'Natthsait Suksumran'
+        },
+        {
+            section: 'Birth',
+            detail: 'Feb 24, 1999'
+        },
+        {
+            section: 'Email',
+            detail: 'palmfp2402@gmail.com'
+        },
+        {
+            section: 'Mobile phone',
+            detail: '081-169-9195'
+        },
+        {
+            section: 'Address',
+            detail: '45/1817 Phongsirichai 4 Village Soi Phetkasem 81 MaCharoen Rd. NongKhaem , NongKhangPhlu Bangkok 10160'
+        }
+    ]
+//#endregion
+    educationData: education[] = [
+        {
+            level: 'High School',
+            year: '2556 - 2559',
+            name: 'Sarasas Pittaya School',
+            major: 'Mathematics-Science',
+        },
+        {
+            level: 'University',
+            year: '2560 - 2564',
+            name: 'Rajamangala University Of Technology Krungthep',
+            major: 'Information Technology ( IT )',
+        }
+    ]
+//#region 
+
+//#endregion
     constructor() {}
     
     ngOnInit(): void {}

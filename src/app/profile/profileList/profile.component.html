@@ -185,56 +185,22 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-sm-12">
-                  <h6 class="mb-0" style="font-size: 18px; font-family:cursive;"><i class="fa fa-user" aria-hidden="true"></i> Personal Details</h6>
+                  <h6 class="mb-0" style="font-size: 18px; font-family:cursive;">
+                    <i class="fa fa-user" aria-hidden="true"></i> Personal Details
+                  </h6>
                 </div>
               </div>
-            <hr>
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Full Name</h6>
+              <div class="container" *ngFor="let item of personalData">
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h4 class="mb-0 font-weight-bold">{{item.section}}</h4>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{item.detail}}
+                  </div>
                 </div>
-                <div class="col-sm-9 text-secondary">
-                  Nattasit Suksumran
-                </div>
-              </div>
-            <hr>
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Birth Date</h6>
-                </div>
-                <div class="col-sm-9 text-secondary">
-                  Feb 24, 1999
-                </div>
-              </div>
-            <hr>
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Email</h6>
-                </div>
-                <div class="col-sm-9 text-secondary">
-                  palmfp2402@gmail.com
-                </div>
-              </div>
-            <hr>
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Mobile</h6>
-                </div>
-                <div class="col-sm-9 text-secondary">
-                  081-169-9195
-                </div>
-              </div>
-            <hr>
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Address</h6>
-                </div>
-                <div class="col-sm-9 text-secondary">
-                  45/1817 Phongsirichai 4 Village Soi Phetkasem 81 <br>
-                  MaCharoen Rd. NongKhaem , NongKhangPhlu
-                  Bangkok 10160
-                </div>
-              </div>
+              </div>       
             </div>
           </div>
 
@@ -246,84 +212,76 @@
                   <h6 class="mb-0" style="font-size: 18px; font-family:cursive;"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h6>
                 </div>               
               </div>
-            <hr>
-              <div class="row">
-                <div class="col-sm-3">
-                  <b>High School</b> <br> <span class="text-secondary" style="font-size: 14px;">2556 - 2559</span>
+              <div class="container" *ngFor="let item of educationData">
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <b>{{item.level}}</b> <br> <span class="text-secondary" style="font-size: 14px;">{{item.year}}</span>
+                  </div>
+                  <div class="col-sm-9">
+                    {{item.name}} <br> <span class="text-secondary" style="font-size: 14px;">{{item.major}}</span>
+                  </div>
                 </div>
-                <div class="col-sm-9">
-                  Sarasas Pittana School <br> <span class="text-secondary" style="font-size: 14px;">Mathematics-Science Programme</span>
-                </div>
-              </div>
-          <hr>
-            <div class="row">
-              <div class="col-sm-3">
-                <b>University</b> <br> <span class="text-secondary" style="font-size: 14px;">2560 - 2564</span>
-              </div>
-              <div class="col-sm-9">
-                Rajamangala University Of Technology Krungthep <br> 
-                <span class="text-secondary" style="font-size: 14px;">Information Technology ( IT ) </span>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="row gutters-sm">
-          <div class="col-sm-12 col-md-12 mb-1">
-            <!-- Experience -->
-            <div class="card mb-3">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <h6 class="mb-0" style="font-size: 18px; font-family:cursive;">
-                      <i class="fa fa-globe" aria-hidden="true"></i> Experience
-                    </h6>
-                  </div>               
-                </div>
-              <hr>
-                <div class="row">
+          <div class="row gutters-sm">
+            <div class="col-sm-12 col-md-12 mb-1">
+              <!-- Experience -->
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <h6 class="mb-0" style="font-size: 18px; font-family:cursive;">
+                        <i class="fa fa-globe" aria-hidden="true"></i> Experience
+                      </h6>
+                    </div>               
+                  </div>
+                <hr>
+                  <div class="row">
+                      <div class="col-sm-4"> 
+                      <b>Graduation Project (4th.)</b> <!--<br><span class="text-secondary" style="font-size: 14px;">2556 - 2559</span> -->
+                    </div>
+                    <div class="col-sm-8">
+                      - Basic E-commerce Website <!--<br> <span class="text-secondary" style="font-size: 14px;">Mathematics-Science Programme</span> -->
+                      <a href="#" class="btn btn-outline-info btn-sm"> Visit <i class="fa fa-hand-o-right" aria-hidden="true" ></i></a>
+                    </div>
+                  </div>
+                <hr>
+                  <div class="row">
                     <div class="col-sm-4"> 
-                    <b>Graduation Project (4th.)</b> <!--<br><span class="text-secondary" style="font-size: 14px;">2556 - 2559</span> -->
+                      <b>Intern (Company)</b> <!--<br><span class="text-secondary" style="font-size: 14px;">2556 - 2559</span> -->
                   </div>
                   <div class="col-sm-8">
-                    - Basic E-commerce Website <!--<br> <span class="text-secondary" style="font-size: 14px;">Mathematics-Science Programme</span> -->
-                    <a href="#" class="btn btn-outline-info btn-sm"> Visit <i class="fa fa-hand-o-right" aria-hidden="true" ></i></a>
+                      - Learn about building website e-commerce by WordPress <br> and Woo-commerce Plugin <br>
+                      - Create Line Chat Bot by website line chat bot developer <br> <!--<br> <span class="text-secondary" style="font-size: 14px;">Mathematics-Science Programme</span> -->
+                      <a href="#" class="btn btn-outline-info btn-sm"> Visit <i class="fa fa-hand-o-right" aria-hidden="true" ></i></a>
+                    </div>
                   </div>
                 </div>
-              <hr>
-                <div class="row">
-                  <div class="col-sm-4"> 
-                    <b>Intern (Company)</b> <!--<br><span class="text-secondary" style="font-size: 14px;">2556 - 2559</span> -->
-                </div>
-                <div class="col-sm-8">
-                    - Learn about building website e-commerce by WordPress <br> and Woo-commerce Plugin <br>
-                    - Create Line Chat Bot by website line chat bot developer <br> <!--<br> <span class="text-secondary" style="font-size: 14px;">Mathematics-Science Programme</span> -->
-                    <a href="#" class="btn btn-outline-info btn-sm"> Visit <i class="fa fa-hand-o-right" aria-hidden="true" ></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>    
-          </div>
+              </div>    
+            </div>
 
           <!-- Work -->
           <div class="col-sm-12 col-md-12 mb-3">
             <div class="card h-100">
               <div class="card-body">
-                <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Work Work</i></h6>
+                <h6 class="d-flex align-items-center mb-3" style="font-size: 18px; font-family:cursive;">Work Work</h6>
                 
                 <small>Front-end Developer </small>
                 <div class="progress mb-3" style="height: 5px">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 69%" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
 
                 <small>Back-end Developer</small>
                 <div class="progress mb-3" style="height: 5px">
-                  <div class="progress-bar bg-danger" role="progressbar" style="width: 49%" aria-valuenow="49" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="49" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
 
                 <small>Full stack Developer</small>
                 <div class="progress mb-3" style="height: 5px">
-                  <div class="progress-bar bg-warning" role="progressbar" style="width: 39%" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               
               </div>
