@@ -19,7 +19,7 @@ export class AfterBodyPageComponent implements OnInit{
         bootstrap: "Bootstrap 4",
         web_framework: "Wordpress",
         vs: "Visual Code",
-        vs_studio: "Visual Studio Code",
+        vs_studio: "Visual Studio",
         database: "Microsoft SQL SERVER Management Studio 18",
         git: "Source Tree"
     }

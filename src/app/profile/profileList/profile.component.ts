@@ -7,6 +7,8 @@ import {formatDate} from '@angular/common';
     styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit{
+
+    currentDae: String = formatDate(new Date(),'dd/MM/yyyy', 'en');
     
     constructor() {}
     
