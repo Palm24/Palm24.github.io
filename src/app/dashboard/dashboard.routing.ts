@@ -5,9 +5,11 @@ import { DashboardComponent } from './dashboard.component';
 export const DashboardRouting: Routes = [
   {
     path: '',
-    children: [{
+    children: [
+      {
       path: 'index',
       component: DashboardComponent
-    }]
+      }
+    ]
   }
 ];

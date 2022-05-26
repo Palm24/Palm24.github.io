@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mt-2">
     <div class="main-body">
     
       <div class="row gutters-sm">
@@ -50,7 +50,7 @@
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                 <h4 class="mb-0">
-                  <i class="fab fa-linkedin" style="font-size: 24px;color: #0077B5;"></i>
+                  <i class="fab fa-linkedin" style="font-size: 24px;"></i>
                   Linkedin
                 </h4>
                 <span class="text-secondary">ณัฐสิทธิ์ สุขสำราญ</span>
@@ -63,27 +63,27 @@
               <!-- Programming Language -->
               <div class="card-body font">
                 <h4 class="d-flex align-items-center mb-3 font-weight-bold">
-                  <mat-icon class="example-tab-icon mr-1">language</mat-icon>{{pgm}}
-                </h4>               
+                  <mat-icon class="example-tab-icon mr-1">language</mat-icon>{{item_pgm.type}}
+                </h4>         
                 <div class="row">
                   <div class="col-sm-6 col-md-6">
-                    <p ><i class="fab fa-html5" [ngClass]="onCheckTypeLanguagePgm(item_pgm.html, pgm)"></i> {{item_pgm.html}}</p>
+                    <p ><i class="fab fa-html5" [ngClass]="onCheckTypeLanguagePgm(item_pgm.html, item_pgm.type)"></i> {{item_pgm.html}}</p>
                   </div>
                   <div class="col-sm-6 col-md-6">
-                    <p><i class="fab fa-css3-alt" [ngClass]="onCheckTypeLanguagePgm(item_pgm.css, pgm)"></i> {{item_pgm.css}}</p>
+                    <p><i class="fab fa-css3-alt" [ngClass]="onCheckTypeLanguagePgm(item_pgm.css, item_pgm.type)"></i> {{item_pgm.css}}</p>
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col-sm-6 col-md-6">
                     <p>
-                      <i class='fab fa-js-square' [ngClass]="onCheckTypeLanguagePgm(item_pgm.javascript, pgm)"></i> 
+                      <i class='fab fa-js-square' [ngClass]="onCheckTypeLanguagePgm(item_pgm.javascript, item_pgm.type)"></i> 
                       {{item_pgm.javascript}}
                     </p>
                   </div>
                   <div class="col-sm-6 col-md-6">
                     <p > 
-                      <i class="fab fa-node-js" [ngClass]="onCheckTypeLanguagePgm(item_pgm.nodejs, pgm)"></i> 
+                      <i class="fab fa-node-js" [ngClass]="onCheckTypeLanguagePgm(item_pgm.nodejs, item_pgm.type)"></i> 
                       {{item_pgm.nodejs}}
                     </p>
                   </div>
@@ -92,31 +92,31 @@
                 <div class="row">
                   <div class="col-sm-6 col-md-6">        
                     <p>
-                      <i class="fab fa-cuttlefish" [ngClass]="onCheckTypeLanguagePgm(item_pgm.c_sharp, pgm)">#</i>
-                       {{item_pgm.c_sharp}}
+                      <i class="fab fa-cuttlefish" [ngClass]="onCheckTypeLanguagePgm(item_pgm.c_sharp, item_pgm.type)">#</i>
+                        {{item_pgm.c_sharp}}
                     </p>
                   </div>
                   <div class="col-sm-6 col-md-6">
-                    <p ><i class="fab fa-php" [ngClass]="onCheckTypeLanguagePgm(item_pgm.php, pgm)"></i> {{item_pgm.php}}</p>
+                    <p ><i class="fab fa-php" [ngClass]="onCheckTypeLanguagePgm(item_pgm.php, item_pgm.type)"></i> {{item_pgm.php}}</p>
                   </div>
-                </div>                                    
+                </div>                                        
               </div>
 
               <!-- Framework -->
               <div class="card-body font pt-0">
                 <h4 class="d-flex align-items-center mb-3 font-weight-bold">
-                  <mat-icon class="example-tab-icon mr-1">edit </mat-icon>{{fw}}
+                  <mat-icon class="example-tab-icon mr-1">edit </mat-icon>{{item_fw.type}}
                 </h4>
                 <div class="row">
                   <div class="col-sm-6 col-md-6">        
                     <p >
-                      <i class="fab fa-angular" [ngClass]="onCheckTypeLanguagePgm(item_fw.angular, fw)"></i>
+                      <i class="fab fa-angular" [ngClass]="onCheckTypeLanguagePgm(item_fw.angular, item_fw.type)"></i>
                        <span>{{item_fw.angular}}</span>
                     </p>
                   </div>
                   <div class="col-sm-6 col-md-6">
                     <p >
-                      <i class="fab fa-angular" [ngClass]="onCheckTypeLanguagePgm(item_fw.angular_mtr, fw)"></i> 
+                      <i class="fab fa-angular" [ngClass]="onCheckTypeLanguagePgm(item_fw.angular_mtr, item_fw.type)"></i> 
                       <span> {{item_fw.angular_mtr}}</span>
                     </p>
                   </div>
@@ -125,13 +125,13 @@
                 <div class="row">
                   <div class="col-sm-6 col-md-6">        
                     <p >
-                      <i class="fab fa-bootstrap" [ngClass]="onCheckTypeLanguagePgm(item_fw.bootstrap, fw)"></i>
+                      <i class="fab fa-bootstrap" [ngClass]="onCheckTypeLanguagePgm(item_fw.bootstrap, item_fw.type)"></i>
                       <span> {{item_fw.bootstrap}}</span>
                     </p>
                   </div>
                   <div class="col-sm-6 col-md-6">
                     <p>
-                      <i class="fab fa-wordpress" [ngClass]="onCheckTypeLanguagePgm(item_fw.wordpress, fw)"></i> 
+                      <i class="fab fa-wordpress" [ngClass]="onCheckTypeLanguagePgm(item_fw.wordpress, item_fw.type)"></i> 
                       <span> {{item_fw.wordpress}}</span>                      
                     </p>
                   </div>
@@ -141,18 +141,18 @@
               <!-- Tools -->
               <div class="card-body font pt-0">
                 <h4 class="d-flex align-items-center mb-3 font-weight-bold">
-                  <mat-icon class="example-tab-icon mr-1">settings </mat-icon>{{tl}}
+                  <mat-icon class="example-tab-icon mr-1">settings </mat-icon>{{item_tl.type}}
                 </h4>
                 <div class="row">
                   <div class="col-sm-6 col-md-6">        
                     <p >
-                      <i class="fas fa-code" [ngClass]="onCheckTypeLanguagePgm(item_tl.vs_code, tl)"></i>
+                      <i class="fas fa-code" [ngClass]="onCheckTypeLanguagePgm(item_tl.vs_code, item_tl.type)"></i>
                         <span> {{item_tl.vs_code}}</span>
                     </p>
                   </div>
                   <div class="col-sm-6 col-md-6">
                     <p >
-                      <i class="fas fa-code" [ngClass]="onCheckTypeLanguagePgm(item_tl.vs_studio, tl)"></i>
+                      <i class="fas fa-code" [ngClass]="onCheckTypeLanguagePgm(item_tl.vs_studio, item_tl.type)"></i>
                       <span> {{item_tl.vs_studio}}</span>
                     </p>
                   </div>
@@ -161,13 +161,13 @@
                 <div class="row">
                   <div class="col-sm-6 col-md-6">
                     <p>
-                      <i class="fas fa-database" [ngClass]="onCheckTypeLanguagePgm(item_tl.database, tl)"></i>
+                      <i class="fas fa-database" [ngClass]="onCheckTypeLanguagePgm(item_tl.database, item_tl.type)"></i>
                       <span> {{item_tl.database}}</span>                      
                     </p>
                   </div>
                   <div class="col-sm-6 col-md-6">        
                     <p >
-                      <i class="fab fa-git-alt" [ngClass]="onCheckTypeLanguagePgm(item_tl.git, tl)" aria-hidden="true"></i>
+                      <i class="fab fa-git-alt" [ngClass]="onCheckTypeLanguagePgm(item_tl.git, item_tl.type)" aria-hidden="true"></i>
                       <span> {{item_tl.git}}</span>
                     </p>
                   </div>
@@ -180,6 +180,21 @@
         </div>
 
         <div class="col-md-8">
+          <!-- Change language! -->
+          <div class="card mb-2">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <mat-slide-toggle color="primary" onchange='onChangeLanguage(isChecked)' [(ngModel)]="isChecked">
+                    <h6 style="font-size: 18px; font-family:cursive;">
+                      <mat-icon class="mt-2">g_translate</mat-icon> <span> {{isChecked == false ? "English" : "Thai"}}</span>
+                    </h6>
+                  </mat-slide-toggle>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Personal Daetail -->
           <div class="card mb-3">
             <div class="card-body">
@@ -197,7 +212,7 @@
                     <h4 class="mb-0 font-weight-bold">{{item.section}}</h4>
                   </div>
                   <div class="col-sm-9 text-secondary">
-                    {{item.detail}}
+                    {{isChecked == false ? item.detailEng : item.detailThai}}
                   </div>
                 </div>
               </div>       
@@ -216,10 +231,14 @@
                 <hr>
                 <div class="row">
                   <div class="col-sm-3">
-                    <b>{{item.level}}</b> <br> <span class="text-secondary" style="font-size: 14px;">{{item.year}}</span>
+                    <b>{{isChecked == false ? item.levelEng : item.levelThai}}</b> 
+                    <br> 
+                    <span class="text-secondary" style="font-size: 14px;">{{isChecked == false ? item.year : item.yearThai}}</span>
                   </div>
                   <div class="col-sm-9">
-                    {{item.name}} <br> <span class="text-secondary" style="font-size: 14px;">{{item.major}}</span>
+                    {{isChecked == false ? item.nameEng : item.nameThai}} 
+                    <br> 
+                    <span class="text-secondary" style="font-size: 14px;">{{isChecked == false ? item.majorEng : item.majorThai}}</span>
                   </div>
                 </div>
               </div>
@@ -240,23 +259,46 @@
                   </div>
                 <hr>
                   <div class="row">
-                      <div class="col-sm-4"> 
-                      <b>Graduation Project (4th.)</b> <!--<br><span class="text-secondary" style="font-size: 14px;">2556 - 2559</span> -->
+                    <div class="col-sm-4"> 
+                      <b>Graduation Project (4th.)</b>
+                      <br>
+                      <span class="text-secondary">March 2564</span>
                     </div>
                     <div class="col-sm-8">
-                      - Basic E-commerce Website <!--<br> <span class="text-secondary" style="font-size: 14px;">Mathematics-Science Programme</span> -->
-                      <a href="#" class="btn btn-outline-info btn-sm"> Visit <i class="fa fa-hand-o-right" aria-hidden="true" ></i></a>
+                      <p>Basic E-commerce Website.</p>
+                      <a href="#" class="btn btn-outline-info btn-sm"> View <i class="fa fa-hand-o-right" aria-hidden="true" ></i></a>
                     </div>
                   </div>
-                <hr>
+                  <hr>
                   <div class="row">
-                    <div class="col-sm-4"> 
-                      <b>Intern (Company)</b> <!--<br><span class="text-secondary" style="font-size: 14px;">2556 - 2559</span> -->
+                    <div class="col-sm-4">
+                      <b>Intern: <br>TAC-M GROUP Co.,Ltd.</b>
+                      <br>
+                      <span class="text-secondary">November 2563 - March 2564</span>
+                    </div>
+                    <div class="col-sm-8">
+                      <p>Learn and edit about building website e-commerce by WordPress and use Elementor plugin, woo-commerce plugin etc.</p>
+                      <p>Learn and Create Line OA & Chat Bot by line chat bot developer & line bot designer. </p>
+                      <a href="#" class="btn btn-outline-info btn-sm"> View <i class="fa fa-hand-o-right" aria-hidden="true" ></i></a>
+                    </div>
                   </div>
-                  <div class="col-sm-8">
-                      - Learn about building website e-commerce by WordPress <br> and Woo-commerce Plugin <br>
-                      - Create Line Chat Bot by website line chat bot developer <br> <!--<br> <span class="text-secondary" style="font-size: 14px;">Mathematics-Science Programme</span> -->
-                      <a href="#" class="btn btn-outline-info btn-sm"> Visit <i class="fa fa-hand-o-right" aria-hidden="true" ></i></a>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <b>Working: <br>PTT Digital Solutions Company Limited.</b>
+                      <br>
+                      <span class="text-secondary">June 2564 - now</span>
+                    </div>
+                    <div class="col-sm-8" *ngFor="let item of expData">
+                      <p>{{item.detailEng.first}}</p>
+                      <p>{{item.detailEng.second}}</p>
+                      <p>{{item.detailEng.third}}</p>
+                      <p>{{item.detailEng.fourth}}</p>
+                      <!-- <p>Font-end: Learn more Angular for write & Edit website & use css framework by angular material & bootstrap.</p>
+                      <p>Back-end: Learn C#/.NetCore for write & edit code back-end.</p>
+                      <p>View edit and check data in database by Microsoft SQL serve management studio 18.</p>
+                      <p>Commit code to gitlab by tool source tree.</p> -->
+                      <a href="#" class="btn btn-outline-info btn-sm"> View <i class="fa fa-hand-o-right" aria-hidden="true" ></i></a>
                     </div>
                   </div>
                 </div>

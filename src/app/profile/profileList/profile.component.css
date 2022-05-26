@@ -1,7 +1,7 @@
 .card-profile {
     box-shadow: 0 5px 5px #adb5bd;
 }
-
+/* -------------------------- */
 .pgm-html {
     font-size: 20px;
     color: orangered;
@@ -27,7 +27,7 @@
     font-size: 24px;
     color: rgb(31, 119, 235);
 }
-
+/* -------------------------- */
 .fw-angular{
     font-size: 20px;
     color: #ff0000;
@@ -44,7 +44,7 @@
     font-size: 20px;
     color: rgb(90, 182, 205);
 }
-
+/* -------------------------- */
 .tl-vs_code {
     font-size: 15px;
     color: #247FB8;

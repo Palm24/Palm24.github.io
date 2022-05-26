@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import {formatDate} from '@angular/common';
-import { education, personal } from "./entities/profile.entity";
+import { education, experience, personal } from "../entities/profile.entity";
 
 @Component({
     selector: 'app-profile',
@@ -11,12 +11,13 @@ export class ProfileComponent implements OnInit{
 
     imgProfile = "https://sv1.picz.in.th/images/2021/05/21/Px8BZI.jpg";
     currentDae: String = formatDate(new Date(),'dd/MM/yyyy', 'en');
+    currentYear: number = new Date().getFullYear();
+    age: number = this.currentYear - 1999;
+    isChecked = false;
 
-    pgm: string = "Programming Language";
-    fw: string = "Framework";
-    tl: string = "Tools";
-
+    //#region programming
     item_pgm = {
+        type: "Programming Language",
         html: "Html",
         css: "CSS",
         javascript: "JavaScript",
@@ -26,6 +27,7 @@ export class ProfileComponent implements OnInit{
     }
 
     item_fw = {
+        type: "Framework",
         angular: "Angular",
         angular_mtr: "Angular Material",
         bootstrap: "Bootstrap 4",
@@ -33,67 +35,103 @@ export class ProfileComponent implements OnInit{
     }
 
     item_tl = {
+        type: "Tools",
         vs_code: "Visual Code",
         vs_studio: "Visual Studio",
         database: "Microsoft SQL Server Management 18",
         git: "Source Tree"
     }
+    //#endregion
 
-    section = {
-        fullName: "Name",
-        birth: "Birth",
-        email: "Email",
-        mobile: "Moblie Phone",
-        address: "Address"
-    }
-
-//#region personal
+    //#region personal
     personalData: personal[] = [
         {
             section: 'Name',
-            detail: 'Natthsait Suksumran'
+            detailEng: 'Natthsait Suksumran (Palm)',
+            detailThai: 'นายณัฐสิทธิ์ สุขสำราญ (ปาล์ม)'
+
         },
         {
             section: 'Birth',
-            detail: 'Feb 24, 1999'
+            detailEng: 'Feb 24, 1999 ' + '(อายุ' + ' '+this.age+' ' + 'ปี)',
+            detailThai: '23 กุมภาพันธ์ 2542' + '(อายุ' + ' '+this.age+' ' + 'ปี)'
         },
         {
             section: 'Email',
-            detail: 'palmfp2402@gmail.com'
+            detailEng: 'palmfp2402@gmail.com',
+            detailThai: 'palmfp2402@gmail.com'
         },
         {
             section: 'Mobile phone',
-            detail: '081-169-9195'
+            detailEng: '081-169-9195',
+            detailThai: '081-169-9195'
         },
         {
             section: 'Address',
-            detail: '45/1817 Phongsirichai 4 Village Soi Phetkasem 81 MaCharoen Rd. NongKhaem , NongKhangPhlu Bangkok 10160'
+            detailEng: '45/1817 Phongsirichai 4 Village Soi Phetkasem 81 MaCharoen Rd. NongKhaem , NongKhangPhlu Bangkok 10160',
+            detailThai: '45/1817 หมู่บ้านพงศิริชัย 4 ซอยเพชรเกษม 81 ถนนมาเจริญ เขตหนองแขม แขวงหนองค้างพลู กรุงเทพมหานคร 10160'
         }
     ]
-//#endregion
+    //#endregion
+
+    //#region education
     educationData: education[] = [
         {
-            level: 'High School',
-            year: '2556 - 2559',
-            name: 'Sarasas Pittaya School',
-            major: 'Mathematics-Science',
+            levelEng: 'High School',
+            levelThai: 'มัธยมศึกษา',
+            year: '2013 - 2016',
+            yearThai: '2556 - 2559',
+            nameEng: 'Sarasas Pittaya School',
+            nameThai: 'โรงเรียนสารสาสน์พิทยา',
+            majorEng: 'Mathematics-Science',
+            majorThai: 'วิทย์คณิต'
         },
         {
-            level: 'University',
-            year: '2560 - 2564',
-            name: 'Rajamangala University Of Technology Krungthep',
-            major: 'Information Technology ( IT )',
+            levelEng: 'University',
+            levelThai: 'มหาวิทยาลัย',
+            year: '2017 - 2021',
+            yearThai: '2560 - 2564',
+            nameEng: 'Rajamangala University Of Technology Krungthep',
+            nameThai: 'มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ',
+            majorEng: 'Information Technology ( IT )',
+            majorThai: 'เทคโนโลยีสารสนเทศ'
         }
     ]
-//#region 
+    //#endregion
 
-//#endregion
+    //#region experience
+    expData: experience[] = [
+        {
+            detailEng: {
+                first: 'Font-end: Learn more Angular for write & Edit website & use css framework by angular material & bootstrap.',
+                second: 'Back-end: Learn C#/.NetCore for write & edit code back-end.',
+                third: 'View edit and check data in database by Microsoft SQL serve management studio 18.',
+                fourth: 'Commit code to gitlab by tool source tree.'
+            },
+            detailThai: {
+                first: 'หน้าบ้าน: ',
+                second: 'หลังบ้าน: ',
+                third: '',
+                fourth: ''
+            }
+        }
+    ]
+    //#endregion
+    
     constructor() {}
     
     ngOnInit(): void {}
 
+    onChangeLanguage(item: boolean) {
+        if (item != true) {
+            this.isChecked = false;
+        } else {
+            this.isChecked = true;
+        }
+    }
+
     onCheckTypeLanguagePgm(item: any, type: string) {
-        if (type == this.pgm) {
+        if (type == this.item_pgm.type) {
             if (item == this.item_pgm.html) {
                 return 'pgm-html';
             } else if (item == "CSS") {
@@ -107,7 +145,7 @@ export class ProfileComponent implements OnInit{
             } else if (item == "PHP") {
                 return 'pgm-php';
             }
-        } else if (type == this.fw) {
+        } else if (type == this.item_fw.type) {
             if (item == this.item_fw.angular) {
                 return 'fw-angular';
             } else if (item == this.item_fw.angular_mtr) {
@@ -117,11 +155,11 @@ export class ProfileComponent implements OnInit{
             } else if (item == this.item_fw.wordpress) {
                 return 'fw-wordpress';
             }
-        } else if (type == this.tl) {
+        } else if (type == this.item_tl.type) {
             if (item == this.item_tl.vs_code) {
                 return 'tl-vs_code';
             } else if (item == this.item_tl.vs_studio) {
-                return 'tl-vs_studio';
+                return 'tl-vs.studio';
             } else if (item == this.item_tl.database) {
                 return 'tl-database';
             } else if (item == this.item_tl.git) {
