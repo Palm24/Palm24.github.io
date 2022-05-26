@@ -257,50 +257,23 @@
                       </h6>
                     </div>               
                   </div>
-                <hr>
-                  <div class="row">
-                    <div class="col-sm-4"> 
-                      <b>Graduation Project (4th.)</b>
-                      <br>
-                      <span class="text-secondary">March 2564</span>
-                    </div>
-                    <div class="col-sm-8">
-                      <p>Basic E-commerce Website.</p>
-                      <a href="#" class="btn btn-outline-info btn-sm"> View <i class="fa fa-hand-o-right" aria-hidden="true" ></i></a>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <b>Intern: <br>TAC-M GROUP Co.,Ltd.</b>
-                      <br>
-                      <span class="text-secondary">November 2563 - March 2564</span>
-                    </div>
-                    <div class="col-sm-8">
-                      <p>Learn and edit about building website e-commerce by WordPress and use Elementor plugin, woo-commerce plugin etc.</p>
-                      <p>Learn and Create Line OA & Chat Bot by line chat bot developer & line bot designer. </p>
-                      <a href="#" class="btn btn-outline-info btn-sm"> View <i class="fa fa-hand-o-right" aria-hidden="true" ></i></a>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <b>Working: <br>PTT Digital Solutions Company Limited.</b>
-                      <br>
-                      <span class="text-secondary">June 2564 - now</span>
-                    </div>
-                    <div class="col-sm-8" *ngFor="let item of expData">
-                      <p>{{item.detailEng.first}}</p>
-                      <p>{{item.detailEng.second}}</p>
-                      <p>{{item.detailEng.third}}</p>
-                      <p>{{item.detailEng.fourth}}</p>
-                      <!-- <p>Font-end: Learn more Angular for write & Edit website & use css framework by angular material & bootstrap.</p>
-                      <p>Back-end: Learn C#/.NetCore for write & edit code back-end.</p>
-                      <p>View edit and check data in database by Microsoft SQL serve management studio 18.</p>
-                      <p>Commit code to gitlab by tool source tree.</p> -->
-                      <a href="#" class="btn btn-outline-info btn-sm"> View <i class="fa fa-hand-o-right" aria-hidden="true" ></i></a>
-                    </div>
-                  </div>
+                  <div class="container" *ngFor="let item of expData">
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-4"> 
+                        <b>{{isChecked == false ? item.level : item.levelThai}}</b>
+                        <br>
+                        <span class="text-secondary">{{isChecked == false ? item.periodEng : item.periodThai}}</span>
+                      </div>
+                      <div class="col-sm-8">
+                        <p>{{isChecked == false ? item.detailEng.first : item.detailThai.first}}</p>
+                        <p>{{isChecked == false ? item.detailEng.second : item.detailThai.second}}</p>
+                        <p>{{isChecked == false ? item.detailEng.third : item.detailThai.third}}</p>
+                        <p>{{isChecked == false ? item.detailEng.fourth : item.detailThai.fourth}}</p>
+                        <a href="#" class="btn btn-outline-info btn-sm"> View <i class="fa fa-hand-o-right" aria-hidden="true" ></i></a>
+                      </div>
+                    </div>                    
+                  </div>                 
                 </div>
               </div>    
             </div>

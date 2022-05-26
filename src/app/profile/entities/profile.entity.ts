@@ -16,6 +16,10 @@ export interface education {
   }
 
 export interface experience {
+  level: string;
+  levelThai: string;
+  periodEng: string;
+  periodThai: string;
   detailEng: expDetail;
   detailThai: expDetail;
 }
