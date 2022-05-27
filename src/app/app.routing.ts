@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { MainNavbarComponent } from './layouts/mainnuvbar/mainnavbar.component';
 
 export const AppRouting : Routes = [
@@ -20,6 +19,10 @@ export const AppRouting : Routes = [
             {
                 path: 'profile',
                 loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule)
+            },
+            {
+                path: 'works',
+                loadChildren: () => import('./works/works.module').then(m => m.WorksModule)
             }
         ]
     }

@@ -1,0 +1,205 @@
+<div class="work">
+    <div class="container-fluid">
+        <p style="margin: 15px 0 15px 50px;font-family:cursive;font-size: 26px;font-weight: bold;">Work & All Experience</p>
+        
+        <div class="row images">        
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 p-2" *ngFor="let item of works1">                   
+                <div class="card p-1" style="width: 100%;">
+                  <!-- Flip Image -->
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="{{item.img}}" class="card-img-top" alt="...">
+                        </div>
+                        <div class="flip-card-back">
+                          <!-- <h1>John Doe</h1>
+                          <p>Architect & Engineer</p>
+                          <p>We love that guy</p> -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- card-body -->
+                    <div class="card-body">
+                      <h4 class="card-title mb-3" style="font-weight: bold;margin-bottom: 5px;">
+                        {{item.item}}
+                      </h4>
+                      <h5>{{item.level}}</h5>
+                      <p class="text-secondary mb-2">
+                        {{item.detail}}
+                      </p>
+                      <a href="#" class="btn btn-primary btn-sm" target="_blank">
+                        Read More ...
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row images">
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 p-2">
+            <div class="card p-1" style="width: 100%;">
+              <!-- Flip Image -->
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="{{img4}}" class="card-img-top" alt="...">
+                    </div>
+                    <div class="flip-card-back">
+                      <!-- <h1>John Doe</h1>
+                      <p>Architect & Engineer</p>
+                      <p>We love that guy</p> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- card-body -->
+                <div class="card-body">
+                  <h5 class="card-title">คอร์สออนไลน์</h5>
+                  <a href="#" class="btn btn-primary btn-sm" target="_blank">Read More..</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-8 p-2">
+            <!-- กรอบขาว -->
+            <div class="card p-1" style="width: 100%;">
+              <div class="row">
+                <div class="col-lg-6">
+                  <!-- Flip Image -->
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{img5}}" class="card-img-top" alt="...">
+                      </div>
+                      <div class="flip-card-back">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- Flip Image -->
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{img6}}" class="card-img-top" alt="...">
+                      </div>
+                      <div class="flip-card-back">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- body -->
+                <div class="card-body">
+                  <h4 class="card-title mb-3" style="font-weight: bold;margin-bottom: 5px;">
+                    Web developer
+                  </h4>
+                  <h5>Intern (4th. University)</h5>
+                  <p class="text-secondary mb-2">
+                    <span style="color: red;">(รูปซ้าย)</span>
+                    ศึกษาการสร้างเว็บไซต์ e-commerce ด้วย Wordpress และ Plugin Woo-commerce รวมถึงการใช้ Plugin อื่นๆ และ Template ของ Wordpress 
+                    ในการสร้าง ตกแต่ง หรือแก้ไขในหน้าเพจต่างๆ และศึกษาและพัฒนาเรื่องการสร้าง Line Chat bot ที่สามารถตอบโต้กับลูกค้าได้โดยการส่งข้อความมาเป็ฯ flex message.................
+                  </p>
+                  <hr>
+                  <p class="text-secondary mb-2">
+                    <span style="color: red;">(รูปขวา)</span>
+                    ศึกษาและพัฒนาเกี่ยวกับการสร้าง Google Map โดยไม่ใช้ Google Map Api ซึ่งสามารถค้นหาข้อมูล และนำข้อมูลนั้นปักหมุดลงใน Google Map ได้ และแสดงข้อมูลนั้นออกมาเป็นรายการ เมื่อกดที่ข้อมูลนั้นสามารถเลื่อนไปยังสถานที่ที่ปักหมุดในแผนที่ได้..............
+                  </p>
+                  <a href="#" class="btn btn-primary btn-sm" target="_blank">
+                    Read More ...
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="row images">
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-4 p-2">
+            <div class="card p-1" style="width: 100%;">
+              <!-- Flip Image -->
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="{{img7}}" class="card-img-top" alt="...">
+                    </div>
+                    <div class="flip-card-back">
+                      <!-- <h1>John Doe</h1>
+                      <p>Architect & Engineer</p>
+                      <p>We love that guy</p> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- card-body -->
+                <div class="card-body">
+                  <h5 class="card-title">คอร์สออนไลน์</h5>
+                  <a href="#" class="btn btn-primary btn-sm" target="_blank">Read More..</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-8 p-2">
+            <!-- กรอบขาว -->
+            <div class="card p-1" style="width: 100%;">
+              <div class="row">
+                <div class="col-lg-6">
+                  <!-- Flip Image -->
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{img8}}" class="card-img-top" alt="...">
+                      </div>
+                      <div class="flip-card-back">
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- body -->
+                  <div class="card-body">
+                    <h4 class="card-title mb-3" style="font-weight: bold;margin-bottom: 5px;">
+                      Web developer
+                    </h4>
+                    <h5>Intern (4th. University)</h5>
+                    <p class="text-secondary mb-2">
+                      <span style="color: red;">(รูปซ้าย)</span>
+                      ศึกษาการสร้างเว็บไซต์ e-commerce ด้วย Wordpress และ Plugin Woo-commerce รวมถึงการใช้ Plugin อื่นๆ และ Template ของ Wordpress 
+                      ในการสร้าง ตกแต่ง หรือแก้ไขในหน้าเพจต่างๆ และศึกษาและพัฒนาเรื่องการสร้าง Line Chat bot ที่สามารถตอบโต้กับลูกค้าได้โดยการส่งข้อความมาเป็ฯ flex message.................
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <!-- Flip Image -->
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="{{img9}}" class="card-img-top" alt="...">
+                      </div>
+                      <div class="flip-card-back">
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- body -->
+                  <div class="card-body">
+                    <h4 class="card-title mb-3" style="font-weight: bold;margin-bottom: 5px;">
+                      Web developer
+                    </h4>
+                    <h5>Intern (4th. University)</h5>
+                    <p class="text-secondary mb-2">
+                      <span style="color: red;">(รูปขวา)</span>
+                      ศึกษาและพัฒนาเกี่ยวกับการสร้าง Google Map โดยไม่ใช้ Google Map Api ซึ่งสามารถค้นหาข้อมูล และนำข้อมูลนั้นปักหมุดลงใน Google Map ได้ และแสดงข้อมูลนั้นออกมาเป็นรายการ เมื่อกดที่ข้อมูลนั้นสามารถเลื่อนไปยังสถานที่ที่ปักหมุดในแผนที่ได้..............
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-primary btn-sm mb-2" target="_blank">
+                Read More ...
+              </a>
+            </div>
+          </div>
+          
+        </div>
+
+    </div>
+</div>
